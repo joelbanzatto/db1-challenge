@@ -1,11 +1,3 @@
-//
-//  DB1_ChallengeTests.swift
-//  DB1 ChallengeTests
-//
-//  Created by helabs on 24/06/19.
-//  Copyright © 2019 Joel Banzatto. All rights reserved.
-//
-
 import XCTest
 @testable import DB1_Challenge
 
