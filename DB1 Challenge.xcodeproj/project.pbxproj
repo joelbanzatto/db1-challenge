@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		98EBCACE76D65337D2839ED3 /* Pods_DB1_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32EB7187F2647B2B0B6A8BDE /* Pods_DB1_Challenge.framework */; };
 		9F0AEADB22C13F1500B3D5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEADA22C13F1500B3D5D4 /* AppDelegate.swift */; };
-		9F0AEADD22C13F1500B3D5D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEADC22C13F1500B3D5D4 /* ViewController.swift */; };
+		9F0AEADD22C13F1500B3D5D4 /* QuotationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEADC22C13F1500B3D5D4 /* QuotationsViewController.swift */; };
 		9F0AEAE022C13F1500B3D5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0AEADE22C13F1500B3D5D4 /* Main.storyboard */; };
 		9F0AEAE222C13F1500B3D5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0AEAE122C13F1500B3D5D4 /* Assets.xcassets */; };
 		9F0AEAE522C13F1500B3D5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0AEAE322C13F1500B3D5D4 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,11 @@
 		9F0AEAFE22C146D000B3D5D4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEAFD22C146D000B3D5D4 /* ApiClient.swift */; };
 		9F0AEB0022C147FE00B3D5D4 /* BitcoinQuotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEAFF22C147FE00B3D5D4 /* BitcoinQuotation.swift */; };
 		9F0AEB0222C14E6900B3D5D4 /* QuotationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEB0122C14E6900B3D5D4 /* QuotationValue.swift */; };
+		9FC4DC5F22C3121800BCF2E3 /* QuotationSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC5E22C3121800BCF2E3 /* QuotationSectionModel.swift */; };
+		9FC4DC6122C3128400BCF2E3 /* QuotationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6022C3128400BCF2E3 /* QuotationAdapter.swift */; };
+		9FC4DC6322C3143600BCF2E3 /* UITableView+Adaptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6222C3143600BCF2E3 /* UITableView+Adaptable.swift */; };
+		9FC4DC6522C3147300BCF2E3 /* QuotationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6422C3147300BCF2E3 /* QuotationCell.swift */; };
+		9FC4DC6722C314EF00BCF2E3 /* FeaturedQuotationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6622C314EF00BCF2E3 /* FeaturedQuotationCell.swift */; };
 		C3090AD9E657DFE56A4D4100 /* Pods_DB1_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E8EC30CB336A114D7674B1 /* Pods_DB1_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +43,7 @@
 		976CE84E056A2A732F4EAD1B /* Pods-DB1 Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DB1 Challenge.release.xcconfig"; path = "Target Support Files/Pods-DB1 Challenge/Pods-DB1 Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		9F0AEAD722C13F1500B3D5D4 /* DB1 Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DB1 Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0AEADA22C13F1500B3D5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F0AEADC22C13F1500B3D5D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F0AEADC22C13F1500B3D5D4 /* QuotationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationsViewController.swift; sourceTree = "<group>"; };
 		9F0AEADF22C13F1500B3D5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F0AEAE122C13F1500B3D5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F0AEAE422C13F1500B3D5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		9F0AEAFD22C146D000B3D5D4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		9F0AEAFF22C147FE00B3D5D4 /* BitcoinQuotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinQuotation.swift; sourceTree = "<group>"; };
 		9F0AEB0122C14E6900B3D5D4 /* QuotationValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationValue.swift; sourceTree = "<group>"; };
+		9FC4DC5E22C3121800BCF2E3 /* QuotationSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationSectionModel.swift; sourceTree = "<group>"; };
+		9FC4DC6022C3128400BCF2E3 /* QuotationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationAdapter.swift; sourceTree = "<group>"; };
+		9FC4DC6222C3143600BCF2E3 /* UITableView+Adaptable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Adaptable.swift"; sourceTree = "<group>"; };
+		9FC4DC6422C3147300BCF2E3 /* QuotationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationCell.swift; sourceTree = "<group>"; };
+		9FC4DC6622C314EF00BCF2E3 /* FeaturedQuotationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedQuotationCell.swift; sourceTree = "<group>"; };
 		C7E8EC30CB336A114D7674B1 /* Pods_DB1_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DB1_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +151,9 @@
 				9F0AEAFD22C146D000B3D5D4 /* ApiClient.swift */,
 				9F0AEAFF22C147FE00B3D5D4 /* BitcoinQuotation.swift */,
 				9F0AEB0122C14E6900B3D5D4 /* QuotationValue.swift */,
+				9FC4DC5E22C3121800BCF2E3 /* QuotationSectionModel.swift */,
+				9FC4DC6022C3128400BCF2E3 /* QuotationAdapter.swift */,
+				9FC4DC6222C3143600BCF2E3 /* UITableView+Adaptable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				9F0AEADE22C13F1500B3D5D4 /* Main.storyboard */,
+				9FC4DC6422C3147300BCF2E3 /* QuotationCell.swift */,
+				9FC4DC6622C314EF00BCF2E3 /* FeaturedQuotationCell.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -156,7 +171,7 @@
 		9F0AEAFC22C13F3F00B3D5D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9F0AEADC22C13F1500B3D5D4 /* ViewController.swift */,
+				9F0AEADC22C13F1500B3D5D4 /* QuotationsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -347,11 +362,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F0AEADD22C13F1500B3D5D4 /* ViewController.swift in Sources */,
+				9FC4DC6322C3143600BCF2E3 /* UITableView+Adaptable.swift in Sources */,
+				9FC4DC6122C3128400BCF2E3 /* QuotationAdapter.swift in Sources */,
+				9FC4DC6722C314EF00BCF2E3 /* FeaturedQuotationCell.swift in Sources */,
+				9F0AEADD22C13F1500B3D5D4 /* QuotationsViewController.swift in Sources */,
 				9F0AEB0022C147FE00B3D5D4 /* BitcoinQuotation.swift in Sources */,
 				9F0AEADB22C13F1500B3D5D4 /* AppDelegate.swift in Sources */,
 				9F0AEAFE22C146D000B3D5D4 /* ApiClient.swift in Sources */,
 				9F0AEB0222C14E6900B3D5D4 /* QuotationValue.swift in Sources */,
+				9FC4DC5F22C3121800BCF2E3 /* QuotationSectionModel.swift in Sources */,
+				9FC4DC6522C3147300BCF2E3 /* QuotationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
