@@ -7,12 +7,10 @@ protocol QuotationSectionModel {
 }
 
 class GenericSectionModel<Model, Cell>: QuotationSectionModel where Cell: UITableViewCell, Cell: QuotationAdaptable, Cell.Model == Model {
-    typealias ModelCellClosure = (Model, Cell) -> ()
-
     private let items: [Model]
     private lazy var cells: [Cell] = self.createCells()
 
-    var count: Int {
+    internal var count: Int {
         return items.count
     }
 
@@ -20,11 +18,11 @@ class GenericSectionModel<Model, Cell>: QuotationSectionModel where Cell: UITabl
         self.items = items
     }
 
-    func cell(at: Int) -> UITableViewCell {
+    public func cell(at: Int) -> UITableViewCell {
         return cells[at]
     }
 
-    func createCells() -> [Cell] {
+    internal func createCells() -> [Cell] {
         return items.map { m in
             let c = Cell()
             c.bind(model: m)

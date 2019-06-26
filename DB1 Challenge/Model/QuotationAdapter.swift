@@ -19,7 +19,8 @@ extension QuotationAdapter: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let section = sections[indexPath.section]
-        return section.cell(at: indexPath.row)
+        let cell = section.cell(at: indexPath.row)
+        return cell
     }
 }
 
