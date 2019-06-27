@@ -4,7 +4,6 @@ platform :ios, '10.0'
 
 target 'DB1 Challenge' do
   use_frameworks!
-  pod 'SwiftCharts', '~> 0.6.5'
   pod 'SQLite.swift', '~> 0.12.0'
 
   target 'DB1 ChallengeTests' do

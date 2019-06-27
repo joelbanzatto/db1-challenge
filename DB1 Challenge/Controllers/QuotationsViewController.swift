@@ -7,13 +7,14 @@ class QuotationsViewController: UIViewController {
     private var refreshControl = UIRefreshControl()
     private var adapter: QuotationAdapter = QuotationAdapter(sections: [])
     private var quotation: BitcoinQuotation! {
+        willSet {
+            self.tableView.setAdapter(QuotationAdapter(sections: []))
+        }
         didSet {
-
-            let featured = quotation.values.popLast()
-            let quotationsSection = GenericSectionModel<QuotationValue, QuotationCell>(items: quotation.sortedValues)
-
-            quotation.values = [QuotationValue]([featured!])
             let featuredSection = GenericSectionModel<BitcoinQuotation, FeaturedQuotationCell>(items: [quotation])
+
+            quotation.values.removeLast()
+            let quotationsSection = GenericSectionModel<QuotationValue, QuotationCell>(items: quotation.sortedValues)
 
             self.adapter = QuotationAdapter(sections: [featuredSection, quotationsSection])
             self.tableView.setAdapter(self.adapter)
@@ -48,7 +49,6 @@ class QuotationsViewController: UIViewController {
             self.stopRefreshing()
         }
     }
-
 
 }
 

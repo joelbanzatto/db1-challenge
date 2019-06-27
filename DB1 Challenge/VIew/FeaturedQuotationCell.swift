@@ -21,7 +21,7 @@ extension FeaturedQuotationCell: QuotationAdaptable {
         attributesView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         attributesView.addArrangedSubview(AttributeStackView(name: "Period", value: model.period))
         attributesView.addArrangedSubview(AttributeStackView(name: "Unit", value: model.unit))
-        if let value = model.values.first {
+        if let value = model.sortedValues.first {
             quotationValueLabel.text = value.y.asMoney()
             attributesView.addArrangedSubview(AttributeStackView(name: "Date", value: value.x.asDate(with: "dd/MM")))
         }
