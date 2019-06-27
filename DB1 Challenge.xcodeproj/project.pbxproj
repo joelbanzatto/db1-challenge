@@ -17,15 +17,18 @@
 		9F0AEAFE22C146D000B3D5D4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEAFD22C146D000B3D5D4 /* ApiClient.swift */; };
 		9F0AEB0022C147FE00B3D5D4 /* BitcoinQuotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEAFF22C147FE00B3D5D4 /* BitcoinQuotation.swift */; };
 		9F0AEB0222C14E6900B3D5D4 /* QuotationValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AEB0122C14E6900B3D5D4 /* QuotationValue.swift */; };
+		9F0D935F22C4603E00681D02 /* QuotationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D935D22C4603E00681D02 /* QuotationCell.swift */; };
+		9F0D936022C4603E00681D02 /* QuotationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0D935E22C4603E00681D02 /* QuotationCell.xib */; };
+		9F0D936222C46CD000681D02 /* Int+DisplayDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D936122C46CD000681D02 /* Int+DisplayDate.swift */; };
+		9F0D936422C46DD100681D02 /* Double+DisplayMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D936322C46DD100681D02 /* Double+DisplayMoney.swift */; };
+		9F0D936622C4753E00681D02 /* AttributeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D936522C4753E00681D02 /* AttributeStackView.swift */; };
 		9FC4DC5F22C3121800BCF2E3 /* QuotationSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC5E22C3121800BCF2E3 /* QuotationSectionModel.swift */; };
 		9FC4DC6122C3128400BCF2E3 /* QuotationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6022C3128400BCF2E3 /* QuotationAdapter.swift */; };
 		9FC4DC6322C3143600BCF2E3 /* UITableView+Adaptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6222C3143600BCF2E3 /* UITableView+Adaptable.swift */; };
-		9FC4DC6522C3147300BCF2E3 /* QuotationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6422C3147300BCF2E3 /* QuotationCell.swift */; };
 		9FC4DC6722C314EF00BCF2E3 /* FeaturedQuotationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6622C314EF00BCF2E3 /* FeaturedQuotationCell.swift */; };
 		9FC4DC6A22C317D900BCF2E3 /* NetworkFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6922C317D900BCF2E3 /* NetworkFeedback.swift */; };
-		9FC4DC6D22C318F000BCF2E3 /* QuotationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6C22C318F000BCF2E3 /* QuotationCell.xib */; };
 		9FC4DC6F22C3190100BCF2E3 /* FeaturedQuotationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FC4DC6E22C3190100BCF2E3 /* FeaturedQuotationCell.xib */; };
-		9FC4DC7122C31DAD00BCF2E3 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC7022C31DAD00BCF2E3 /* Identifiable.swift */; };
+		9FC4DC7122C31DAD00BCF2E3 /* IdentifiableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC4DC7022C31DAD00BCF2E3 /* IdentifiableCell.swift */; };
 		C3090AD9E657DFE56A4D4100 /* Pods_DB1_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E8EC30CB336A114D7674B1 /* Pods_DB1_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,15 +61,18 @@
 		9F0AEAFD22C146D000B3D5D4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		9F0AEAFF22C147FE00B3D5D4 /* BitcoinQuotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinQuotation.swift; sourceTree = "<group>"; };
 		9F0AEB0122C14E6900B3D5D4 /* QuotationValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationValue.swift; sourceTree = "<group>"; };
+		9F0D935D22C4603E00681D02 /* QuotationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationCell.swift; sourceTree = "<group>"; };
+		9F0D935E22C4603E00681D02 /* QuotationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotationCell.xib; sourceTree = "<group>"; };
+		9F0D936122C46CD000681D02 /* Int+DisplayDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+DisplayDate.swift"; sourceTree = "<group>"; };
+		9F0D936322C46DD100681D02 /* Double+DisplayMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+DisplayMoney.swift"; sourceTree = "<group>"; };
+		9F0D936522C4753E00681D02 /* AttributeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeStackView.swift; sourceTree = "<group>"; };
 		9FC4DC5E22C3121800BCF2E3 /* QuotationSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationSectionModel.swift; sourceTree = "<group>"; };
 		9FC4DC6022C3128400BCF2E3 /* QuotationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationAdapter.swift; sourceTree = "<group>"; };
 		9FC4DC6222C3143600BCF2E3 /* UITableView+Adaptable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Adaptable.swift"; sourceTree = "<group>"; };
-		9FC4DC6422C3147300BCF2E3 /* QuotationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationCell.swift; sourceTree = "<group>"; };
 		9FC4DC6622C314EF00BCF2E3 /* FeaturedQuotationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedQuotationCell.swift; sourceTree = "<group>"; };
 		9FC4DC6922C317D900BCF2E3 /* NetworkFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFeedback.swift; sourceTree = "<group>"; };
-		9FC4DC6C22C318F000BCF2E3 /* QuotationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotationCell.xib; sourceTree = "<group>"; };
 		9FC4DC6E22C3190100BCF2E3 /* FeaturedQuotationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedQuotationCell.xib; sourceTree = "<group>"; };
-		9FC4DC7022C31DAD00BCF2E3 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		9FC4DC7022C31DAD00BCF2E3 /* IdentifiableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableCell.swift; sourceTree = "<group>"; };
 		C7E8EC30CB336A114D7674B1 /* Pods_DB1_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DB1_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,11 +177,12 @@
 			isa = PBXGroup;
 			children = (
 				9F0AEADE22C13F1500B3D5D4 /* Main.storyboard */,
-				9FC4DC6422C3147300BCF2E3 /* QuotationCell.swift */,
-				9FC4DC6C22C318F000BCF2E3 /* QuotationCell.xib */,
 				9FC4DC6622C314EF00BCF2E3 /* FeaturedQuotationCell.swift */,
 				9FC4DC6E22C3190100BCF2E3 /* FeaturedQuotationCell.xib */,
-				9FC4DC7022C31DAD00BCF2E3 /* Identifiable.swift */,
+				9FC4DC7022C31DAD00BCF2E3 /* IdentifiableCell.swift */,
+				9F0D935D22C4603E00681D02 /* QuotationCell.swift */,
+				9F0D935E22C4603E00681D02 /* QuotationCell.xib */,
+				9F0D936522C4753E00681D02 /* AttributeStackView.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -200,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				9FC4DC6222C3143600BCF2E3 /* UITableView+Adaptable.swift */,
+				9F0D936122C46CD000681D02 /* Int+DisplayDate.swift */,
+				9F0D936322C46DD100681D02 /* Double+DisplayMoney.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,8 +300,8 @@
 			files = (
 				9F0AEAE522C13F1500B3D5D4 /* LaunchScreen.storyboard in Resources */,
 				9F0AEAE222C13F1500B3D5D4 /* Assets.xcassets in Resources */,
-				9FC4DC6D22C318F000BCF2E3 /* QuotationCell.xib in Resources */,
 				9FC4DC6F22C3190100BCF2E3 /* FeaturedQuotationCell.xib in Resources */,
+				9F0D936022C4603E00681D02 /* QuotationCell.xib in Resources */,
 				9F0AEAE022C13F1500B3D5D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,17 +402,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC4DC6322C3143600BCF2E3 /* UITableView+Adaptable.swift in Sources */,
-				9FC4DC7122C31DAD00BCF2E3 /* Identifiable.swift in Sources */,
+				9F0D936222C46CD000681D02 /* Int+DisplayDate.swift in Sources */,
+				9F0D935F22C4603E00681D02 /* QuotationCell.swift in Sources */,
+				9FC4DC7122C31DAD00BCF2E3 /* IdentifiableCell.swift in Sources */,
 				9FC4DC6122C3128400BCF2E3 /* QuotationAdapter.swift in Sources */,
 				9FC4DC6722C314EF00BCF2E3 /* FeaturedQuotationCell.swift in Sources */,
 				9F0AEADD22C13F1500B3D5D4 /* QuotationsViewController.swift in Sources */,
 				9F0AEB0022C147FE00B3D5D4 /* BitcoinQuotation.swift in Sources */,
 				9F0AEADB22C13F1500B3D5D4 /* AppDelegate.swift in Sources */,
 				9FC4DC6A22C317D900BCF2E3 /* NetworkFeedback.swift in Sources */,
+				9F0D936622C4753E00681D02 /* AttributeStackView.swift in Sources */,
 				9F0AEAFE22C146D000B3D5D4 /* ApiClient.swift in Sources */,
 				9F0AEB0222C14E6900B3D5D4 /* QuotationValue.swift in Sources */,
+				9F0D936422C46DD100681D02 /* Double+DisplayMoney.swift in Sources */,
 				9FC4DC5F22C3121800BCF2E3 /* QuotationSectionModel.swift in Sources */,
-				9FC4DC6522C3147300BCF2E3 /* QuotationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

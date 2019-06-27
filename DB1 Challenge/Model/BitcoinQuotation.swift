@@ -6,6 +6,11 @@ struct BitcoinQuotation: Decodable {
     public var period: String
     public var description: String
     public var values: [QuotationValue]
+    public var sortedValues: [QuotationValue] {
+        get {
+            return self.values.sorted(by: { $0.x > $1.x })
+        }
+    }
 
     enum CodingKeys: String, CodingKey {
         case name, unit, period, description, values

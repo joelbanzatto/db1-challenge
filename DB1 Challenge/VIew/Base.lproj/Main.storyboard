@@ -14,8 +14,8 @@
         <scene sceneID="IR1-AT-bwa">
             <objects>
                 <navigationController id="Pfb-Xv-WgL" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GxH-gc-iQ3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GxH-gc-iQ3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-546" y="117"/>
         </scene>
-        <!--Quotations View Controller-->
+        <!--Bitcoin Quotation-->
         <scene sceneID="n6R-WY-b2r">
             <objects>
                 <viewController id="NDX-KG-h18" customClass="QuotationsViewController" customModule="DB1_Challenge" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-6I-so8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -48,9 +48,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Dw-pW-LIp"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uYJ-BM-i7o"/>
+                    <navigationItem key="navigationItem" title="Bitcoin Quotation" id="uYJ-BM-i7o">
+                        <barButtonItem key="backBarButtonItem" title=" " id="CD4-31-v4u"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="6Pa-6I-so8" id="QS2-OH-2Za"/>
+                        <outlet property="tableView" destination="6Pa-6I-so8" id="Pwd-bh-AAY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwK-83-ngz" userLabel="First Responder" sceneMemberID="firstResponder"/>

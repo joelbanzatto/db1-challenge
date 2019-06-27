@@ -1,15 +1,15 @@
 import UIKit
 
-class QuotationCell: UITableViewCell {}
+class QuotationCell: UITableViewCell, QuotationAdaptable {
+    static var cellHeight: CGFloat = 44
 
-extension QuotationCell: QuotationAdaptable {
-    func bind(model: QuotationValue) {
-        // bind values to view components
-    }
-}
+    typealias Model = QuotationValue
 
-extension QuotationCell: Identifiable {
-    static var identifier: String {
-        return "QuotationCell"
+    @IBOutlet private var dateLabel: UILabel?
+    @IBOutlet private var valueLabel: UILabel?
+
+    func bind(model: QuotationValue, at indexPath: IndexPath) {
+        dateLabel?.text = "\(model.x.asDate())"
+        valueLabel?.text = "\(model.y.asMoney())"
     }
 }

@@ -4,11 +4,17 @@ class QuotationsViewController: UIViewController {
 
     @IBOutlet internal var tableView: UITableView!
 
-    internal var adapter: QuotationAdapter = QuotationAdapter(sections: [])
-    internal var quotation: BitcoinQuotation! {
+    private var refreshControl = UIRefreshControl()
+    private var adapter: QuotationAdapter = QuotationAdapter(sections: [])
+    private var quotation: BitcoinQuotation! {
         didSet {
+
+            let featured = quotation.values.popLast()
+            let quotationsSection = GenericSectionModel<QuotationValue, QuotationCell>(items: quotation.sortedValues)
+
+            quotation.values = [QuotationValue]([featured!])
             let featuredSection = GenericSectionModel<BitcoinQuotation, FeaturedQuotationCell>(items: [quotation])
-            let quotationsSection = GenericSectionModel<QuotationValue, QuotationCell>(items: quotation.values)
+
             self.adapter = QuotationAdapter(sections: [featuredSection, quotationsSection])
             self.tableView.setAdapter(self.adapter)
         }
@@ -16,14 +22,30 @@ class QuotationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
         fetchQuotation()
     }
 
-    internal func fetchQuotation() {
+    private func setupTableView() {
+        tableView.register(UINib(nibName: "FeaturedQuotationCell", bundle: nil), forCellReuseIdentifier: FeaturedQuotationCell.reuseIdentifier)
+        tableView.register(UINib(nibName: "QuotationCell", bundle: nil), forCellReuseIdentifier: QuotationCell.reuseIdentifier)
+
+        refreshControl.addTarget(self, action: #selector(fetchQuotation), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+
+    private func stopRefreshing() {
+        DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
+        }
+    }
+
+    @objc private func fetchQuotation() {
         NetworkFeedback.shared.startLoading()
         ApiClient.shared.fetchQuotation { [unowned self] (remoteQuotation) in
             self.quotation = remoteQuotation
             NetworkFeedback.shared.stopLoading()
+            self.stopRefreshing()
         }
     }
 
