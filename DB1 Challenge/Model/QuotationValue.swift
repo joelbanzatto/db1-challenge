@@ -13,6 +13,11 @@ struct QuotationValue: Decodable {
         case x, y
     }
 
+    init(x: Int, y: Double) {
+        self.x = x
+        self.y = y
+    }
+
     init(from decoder: Decoder) throws {
         let decodingValues = try decoder.container(keyedBy: CodingKeys.self)
         x = try decodingValues.decode(Int.self, forKey: .x)

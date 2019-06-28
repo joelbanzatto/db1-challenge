@@ -1,13 +1,18 @@
 import Foundation
 
-class ApiClient {
+final class ApiClient {
 
     static let shared = ApiClient()
     internal let endpointURI = "https://api.blockchain.info/charts/market-price?format=json&timespan=30days"
 
-    public func fetchQuotation(success: @escaping (BitcoinQuotation) -> Void) {
+    public func fetchQuotation(success: @escaping (BitcoinQuotation) -> Void, fail: @escaping (Error?) -> Void) {
         guard let url = URL(string: endpointURI) else { return }
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        let urlSession = URLSession(configuration: .ephemeral)
+        let task = urlSession.dataTask(with: url) { (data, response, error) in
+            if (error != nil) {
+                fail(error)
+                return
+            }
             guard let dataResponse = data, error == nil else {
                 print(error?.localizedDescription ?? "Response Error")
                 return
@@ -18,6 +23,7 @@ class ApiClient {
                 success(quotation)
             } catch let parsingError {
                 print("Error", parsingError)
+                fail(parsingError)
             }
         }
         task.resume()

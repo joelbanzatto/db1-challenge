@@ -16,6 +16,14 @@ struct BitcoinQuotation: Decodable {
         case name, unit, period, description, values
     }
 
+    init(name: String, unit: String, period: String, description: String, values: [QuotationValue]) {
+        self.name = name
+        self.unit = unit
+        self.period = period
+        self.description = description
+        self.values = values
+    }
+
     init(from decoder: Decoder) throws {
         let decodingValues = try decoder.container(keyedBy: CodingKeys.self)
         name = try decodingValues.decode(String.self, forKey: .name)
