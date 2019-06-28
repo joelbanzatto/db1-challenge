@@ -1,6 +1,5 @@
 import Foundation
 import SQLite
-import Reachability
 
 typealias SuccessHandlerType = (BitcoinQuotation) -> Void
 typealias FailHandlerType = (Error?) -> Void
@@ -13,7 +12,6 @@ enum ProviderError: Error {
 final class QuotationDataProvider {
 
     static let shared = QuotationDataProvider()
-    private let reachability = Reachability()
     private var database: Connection!
 
     struct BitcointQuotationFields {
