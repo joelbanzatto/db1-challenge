@@ -19,11 +19,9 @@ class QuotationsViewControllerSpecs: QuickSpec {
 
             context("when view is loaded") {
                 it("has an empty tableview") {
-                    expect(viewController.tableView.numberOfSections).to(equal(0))
+                    expect(viewController.tableView.numberOfSections).to(equal(1))
                 }
-            }
-
-            context("when api is fetched") {
+            
                 it("has a 2 section tableview") {
                     expect(viewController.tableView.numberOfSections).toEventually(equal(2))
                 }

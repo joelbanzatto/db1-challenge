@@ -43,7 +43,7 @@ class QuotationsViewController: UIViewController {
 
     @objc private func fetchQuotation() {
         NetworkFeedback.shared.startLoading()
-        QuotationDataProvider.shared.fetchQuotation { [unowned self] quotation in
+        QuotationDataProvider.shared.fetchQuotation { quotation in
             self.quotation = quotation
             NetworkFeedback.shared.stopLoading()
             self.stopRefreshing()

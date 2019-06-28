@@ -5,10 +5,10 @@ import Nimble
 
 class QuotationDataProviderSpecs: QuickSpec {
     override func spec() {
+        var result: BitcoinQuotation?
         describe("QuotationDataProvider specs") {
             context("remote or local data fetching") {
                 it("has to be successful both local OR remote call") {
-                    var result: BitcoinQuotation?
                     QuotationDataProvider.shared.fetchQuotation { value in
                         result = value
                     }
