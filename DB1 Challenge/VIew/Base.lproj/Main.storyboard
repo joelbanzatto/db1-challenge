@@ -29,7 +29,7 @@
         <!--Bitcoin Quotation-->
         <scene sceneID="n6R-WY-b2r">
             <objects>
-                <viewController id="NDX-KG-h18" customClass="QuotationsViewController" customModule="DB1_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="QuotationsViewController" storyboardIdentifier="QuotationsViewController" id="NDX-KG-h18" customClass="QuotationsViewController" customModule="DB1_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AEj-m5-QcA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

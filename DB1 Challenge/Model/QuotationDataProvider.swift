@@ -12,9 +12,9 @@ enum ProviderError: Error {
 final class QuotationDataProvider {
 
     static let shared = QuotationDataProvider()
-    private var database: Connection!
+    public var database: Connection!
 
-    struct BitcointQuotationFields {
+    private struct BitcointQuotationFields {
         static let shared = BitcointQuotationFields()
         public let description = Expression<String>("description")
         public let period = Expression<String>("period")
@@ -22,7 +22,7 @@ final class QuotationDataProvider {
         public let name = Expression<String>("name")
     }
 
-    struct QuotationValueFields {
+    private struct QuotationValueFields {
         static let shared = QuotationValueFields()
         public let x = Expression<Int>("x")
         public let y = Expression<Double>("y")
